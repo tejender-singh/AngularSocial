@@ -1,0 +1,8 @@
+section {
+    display: table;
+  }
+    
+  .main {
+    z-index: -1;
+    margin-top: 70px; /* Add a top margin to avoid content overlay */
+  }

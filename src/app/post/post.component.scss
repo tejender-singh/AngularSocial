@@ -1,0 +1,49 @@
+
+  .mat-card {
+    max-width: 600px;
+    align-self: center;
+    margin: 0 auto;
+    position: inherit;
+  }
+
+  .card-image {
+    max-width: 600px;
+    align-self: center;
+    margin: 0 auto;
+    position: inherit;
+  }
+
+  .mat-div{
+    margin-top: 10px;
+  }
+  
+  .action-button {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    margin: 0em;
+    padding: 1px 10px;
+    border-width: 0px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+  }
+
+  .action-content{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+  }
+
+  .action-content-left{
+    float:left;
+    width: 50%;
+  }
+
+  .action-content-right{
+    float:right;
+    width: 50%;
+    text-align: end;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }

@@ -1,0 +1,40 @@
+<div class="mat-div">
+<mat-card class="mat-card">
+    <mat-card-header>
+      <img mat-card-avatar src="{{profileImage}}" class="example-header-image">
+      <mat-card-title>{{userId}}</mat-card-title>
+      <mat-card-subtitle>{{postLocation}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image src="{{postImage}}" alt="Photo of a Shiba Inu">
+    
+    <mat-card-actions>
+      <div class="action-content">
+        <div class="action-content-left">
+          <button (click)="onLikeClick()"class="action-button"color="accent"> 
+            <mat-icon aria-hidden="false">{{liked ? 'favorite' : 'favorite_border'}}</mat-icon> 
+          </button>
+          <button class="action-button" color="accent"> 
+            <mat-icon aria-hidden="false">chat_bubble_outline</mat-icon> 
+          </button>
+          <button class="action-button" color="accent"> 
+            <mat-icon aria-hidden="false">send</mat-icon> 
+          </button>
+        </div>
+
+        <div class="action-content-right">
+          <button class="action-button" color="accent"> 
+          <mat-icon aria-hidden="false">bookmark_outline</mat-icon> 
+          </button>
+        </div>
+      </div>
+    </mat-card-actions>
+    
+    
+    <mat-card-content>
+      <p>
+        {{postCaption}}
+      </p>
+    </mat-card-content>
+</mat-card>
+</div>
