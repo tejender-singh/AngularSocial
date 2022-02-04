@@ -1,6 +1,13 @@
 <app-menu-bar></app-menu-bar>
 <div class="main">
-    <div *ngFor="let post of posts">
-        <app-post></app-post>
-    </div>
+  <div *ngFor="let post of posts">
+    <app-post 
+    [postImages]="post.postImages"
+    [profileImage]="post.profileImage"
+    [postCaption]="post.postCaption"
+    [userId]="post.userId"
+    [postLocation]="post.postLocation"
+    [liked]="post.liked">
+    </app-post>
+  </div>
 </div>

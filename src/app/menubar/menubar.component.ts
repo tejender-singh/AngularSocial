@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./menubar.component.scss']
 })
 export class MenuBarComponent {
-  title = 'AngularSocial';
-
   onHomeClick(): void{
     alert('hello');
   }
@@ -31,5 +29,4 @@ export class MenuBarComponent {
   onProfileClick(): void{
     alert('onProfileClick');
   }
-
 }

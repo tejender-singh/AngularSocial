@@ -1,18 +1,19 @@
 <div class="mat-div">
-<mat-card class="mat-card">
+  <mat-card class="mat-card">
     <mat-card-header>
-      <img mat-card-avatar src="{{profileImage}}" class="example-header-image">
+      <img mat-card-avatar src="{{profileImage}}" class="header-image">
       <mat-card-title>{{userId}}</mat-card-title>
       <mat-card-subtitle>{{postLocation}}</mat-card-subtitle>
     </mat-card-header>
 
-    <img mat-card-image src="{{postImage}}" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="{{postImages[0]}}">
     
     <mat-card-actions>
       <div class="action-content">
-        <div class="action-content-left">
-          <button (click)="onLikeClick()"class="action-button"color="accent"> 
-            <mat-icon aria-hidden="false">{{liked ? 'favorite' : 'favorite_border'}}</mat-icon> 
+
+        <div class="action-content-left">          
+          <button (click)="onLikeClick()" class="action-button"color="accent"> 
+            <mat-icon aria-hidden="false" class="{{liked ? 'like-button-selected': ''}}">{{liked ? 'favorite' : 'favorite_border'}}</mat-icon> 
           </button>
           <button class="action-button" color="accent"> 
             <mat-icon aria-hidden="false">chat_bubble_outline</mat-icon> 
@@ -27,6 +28,7 @@
           <mat-icon aria-hidden="false">bookmark_outline</mat-icon> 
           </button>
         </div>
+
       </div>
     </mat-card-actions>
     
@@ -35,6 +37,15 @@
       <p>
         {{postCaption}}
       </p>
+      <hr class="solid"/>
     </mat-card-content>
-</mat-card>
+
+
+    <mat-form-field class="comment-field">
+      <mat-label>Comment</mat-label>
+      <input matNativeControl>
+    </mat-form-field>
+    <button mat-button (click)="onPostComment()">Post</button>
+
+  </mat-card>
 </div>

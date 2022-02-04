@@ -1,20 +1,10 @@
-section {
-    display: table;
-  }
-  
   .app-bar {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     overflow: hidden;
   }
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
-  }
-  
+
   .example-button-row {
     display: table-cell;
     width: 100%;
@@ -27,5 +17,3 @@ section {
   .center {
     text-align: center;
   }
-
-  

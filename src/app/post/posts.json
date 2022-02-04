@@ -1,0 +1,58 @@
+[
+  {
+    "postImages": ["../../assets/postImages/One.jpg"],
+    "profileImage":  "../../assets/postImages/ManchesterUnited.jpg",
+    "postCaption": "Back at #OldTrafford on Friday.\n\n        #MUFC #ManUtd #FACup",
+    "userId": "Manchester United",
+    "postLocation": "Manchester",
+    "liked": true
+  },
+  {
+    "postImages": ["../../assets/postImages/Two.jpg"],
+    "profileImage":  "../../assets/postImages/ManchesterUnited.jpg",
+    "postCaption": " David De Gea has won our first Player of the Month award of 2022.\n\n        #MUFC #ManUtd #DeGea",
+    "userId": "Manchester United",
+    "postLocation": "Manchester",
+    "liked": false
+  },
+  {
+    "postImages": ["../../assets/postImages/Three.jpg"],
+    "profileImage":  "../../assets/postImages/ManchesterUnited.jpg",
+    "postCaption": " Hoping your birthday is as classy as you are. @Berbo9 — have a good one! 😎🎂\n\n        #MUFC #ManUtd #Berbatov",
+    "userId": "Manchester United",
+    "postLocation": "Manchester",
+    "liked": false
+  },
+  {
+    "postImages": ["../../assets/postImages/Four.jpg"],
+    "profileImage":  "../../assets/postImages/Voyaged.jpg",
+    "postCaption": "One of the oldest remaining monasteries in Austria, Admont Abbey is a fairy-tale-esque masterpiece of Baroque and Gothic architecture and one of the country’s most precious historical landmarks.",
+    "userId": "Voyaged",
+    "postLocation": "Library",
+    "liked": false
+  },
+  {
+    "postImages": ["../../assets/postImages/Five.jpg"],
+    "profileImage":  "../../assets/postImages/Voyaged.jpg",
+    "postCaption": "This must be where the Batman of Mexico City lives. 🦇\n        —\n        📌 #mexico #veracruz",
+    "userId": "Voyaged",
+    "postLocation": "Cave",
+    "liked": true
+  },
+  {
+    "postImages": ["../../assets/postImages/Six.jpg"],
+    "profileImage":  "../../assets/postImages/Marvel.jpg",
+    "postCaption": "Check out the all new poster for Marvel Studios’ #MoonKnight and start streaming the Original series March 30 on @DisneyPlus.",
+    "userId": "Marvel",
+    "postLocation": "Moon",
+    "liked": false
+  },
+  {
+    "postImages": ["../../assets/postImages/Seven.jpg"],
+    "profileImage":  "../../assets/postImages/Marvel.jpg",
+    "postCaption": "The wait is over! Marvel Studios’ @Eternals is now streaming in @IMAX Enhanced on @DisneyPlus 💫 #IMAXonDisneyPlus",
+    "userId": "Marvel",
+    "postLocation": "Earth",
+    "liked": true
+  }
+]

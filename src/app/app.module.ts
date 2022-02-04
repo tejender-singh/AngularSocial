@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import { PostComponent } from './post/post.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     MatIconModule,
     MatDividerModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
