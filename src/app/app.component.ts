@@ -10,10 +10,14 @@ import { PostService } from './post/post.service';
 export class AppComponent implements OnInit{
 
   posts: IPost[] = [];
-
+  isLoggedIn = false;
   constructor(private postService: PostService){}
 
   ngOnInit(): void {
     this.posts = this.postService.getPosts();
+  }
+
+  onLoginChanged(loggedIn: boolean){
+    this.isLoggedIn = loggedIn;
   }
 }

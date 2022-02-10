@@ -1,0 +1,46 @@
+
+.mat-card{
+  max-width: 400px;
+  text-align: center;
+  align-self: center;
+  margin: 150px auto 0;
+  position: inherit;
+}
+
+mat-card-header{
+  display: contents;
+}
+
+mat-card-content{
+  margin-top: 10%;
+}
+
+.login-input{
+  padding: 2%;
+  margin: 3%;
+  background-color: #fafafa;
+  width: 80%;
+  border: 1px solid #dbdbdb
+}
+
+.login-button{
+  width: 80%;
+  margin: 3%;
+  background-color: #0095f6;
+  color: white;
+}
+
+.login-button:disabled{
+  background-color: #B2DFFC;
+  color: white;
+}
+
+p{
+  text-align: -webkit-left;
+  margin-left: 10%;
+  color: red
+}
+
+a{
+  color: #00376b;
+}

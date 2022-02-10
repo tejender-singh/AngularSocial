@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./menubar.component.scss']
 })
 export class MenuBarComponent {
+
+  @Output() onLogout: EventEmitter<boolean> = new EventEmitter();
+
   onHomeClick(): void{
     alert('hello');
   }
@@ -27,6 +30,6 @@ export class MenuBarComponent {
   }
 
   onProfileClick(): void{
-    alert('onProfileClick');
+    this.onLogout.next(false);
   }
 }
