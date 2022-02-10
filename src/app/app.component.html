@@ -1,9 +1,9 @@
 <div *ngIf="!isLoggedIn">
-  <app-login (onLogin)="onLoginChanged($event)"></app-login>
+  <app-login></app-login>
   <p class="footer"> Use username: JohnDoe and password:JohnDoe to login</p>
 </div>
 <div *ngIf="isLoggedIn">
-  <app-menu-bar (onLogout)="onLoginChanged($event)"></app-menu-bar>
+  <app-menu-bar></app-menu-bar>
   <div class="main">
     <div *ngFor="let post of posts">
       <app-post 

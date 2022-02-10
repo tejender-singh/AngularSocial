@@ -10,7 +10,6 @@ export class LoginComponent {
   _username = '';
   _password = '';
   loginError = '';
-  @Output() onLogin: EventEmitter<boolean> = new EventEmitter();
   isButtonDisabled = true;
 
   constructor(private userService: UserService){}
@@ -35,7 +34,6 @@ export class LoginComponent {
     const response = this.userService.login(this.username, this.password);
     if(response === 'Success'){
       this.loginError = '';
-      this.onLogin.next(true);
     } else {
       this.loginError = response;
     }

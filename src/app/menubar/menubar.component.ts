@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { UserService } from '../user/user.service';
 
 @Component({
   selector: 'app-menu-bar',
@@ -7,10 +8,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class MenuBarComponent {
 
-  @Output() onLogout: EventEmitter<boolean> = new EventEmitter();
+  constructor(private userService: UserService){}
 
   onHomeClick(): void{
-    alert('hello');
+    alert('Home '+this.userService.userId);
   }
 
   onMessageClick(): void{
@@ -30,6 +31,6 @@ export class MenuBarComponent {
   }
 
   onProfileClick(): void{
-    this.onLogout.next(false);
+    this.userService.logout();
   }
 }
